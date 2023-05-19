@@ -13,9 +13,9 @@
 // }
 
 // fn main() {
-//     // print_color(Color::Red);
+//     print_color(Color::Red);
 //     print_color(Color::Green);
-//     // print_color(Color::Blue);
+//     print_color(Color::Blue);
 // }
 
 fn main() {}
