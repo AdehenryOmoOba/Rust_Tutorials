@@ -63,15 +63,77 @@
 // ==================================================
 
 // Tuples
-fn generate_tuples() -> (i32, f64) {
-    return (100, 12.75);
+// fn generate_tuples() -> (i32, f64) {
+//     return (100, 12.75);
+// }
+// fn main() {
+//     // un-destructured tuples
+//     let data = generate_tuples();
+//     // Destructured tuples
+//     let (age, height) = generate_tuples();
+
+//     println!("Ade is {}years old and {}ft tall", data.0, data.1);
+//     println!("Henry is {}years old and {}ft tall", age, height);
+// }
+
+// =========================================================
+
+// impl
+// struct Car {
+//     name: String,
+//     year: i32,
+//     price: f64,
+// }
+
+// impl Car {
+//     fn print_car_details(&self) {
+//         println!("My car name: {:?}", self.name);
+//         println!("My car price: ${:?}", self.price);
+//         println!("My car production year: {:?}", self.year);
+//     }
+// }
+
+// fn main() {
+//     let my_car = Car {
+//         name: "Honda".to_owned(),
+//         price: 550.00,
+//         year: 2023,
+//     };
+
+//     my_car.print_car_details()
+// }
+
+// =============================================
+
+// Vectors
+// fn main() {
+//     let mut age_list = Vec::new();
+//     let people = vec!["Buy Grocery", "View Cart", "Calculate Cart Total", "Quit"];
+
+//     age_list.push(22);
+//     age_list.push(41);
+//     age_list.push(77);
+
+//     for age in &age_list {
+//         println!("Age: {:?}", age);
+//     }
+
+//     let mut list_number = 0;
+
+//     for action in &people {
+//         list_number += 1;
+//         println!("{:?}. {:?}", list_number, action);
+//     }
+// }
+
+// ===============================================
+
+// strings
+fn print_name(first_name: &str, last_name: &str) {
+    println!("Full name: {first_name} - {last_name}");
 }
 fn main() {
-    // un-destructured tuples
-    let data = generate_tuples();
-    // Destructured tuples
-    let (age, height) = generate_tuples();
-
-    println!("Ade is {}years old and {}ft tall", data.0, data.1);
-    println!("Henry is {}years old and {}ft tall", age, height);
+    // let first_name = "Ade";
+    // let last_name = "Henry";
+    print_name("Ade", "Henry")
 }

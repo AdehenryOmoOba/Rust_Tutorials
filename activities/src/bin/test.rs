@@ -17,3 +17,4 @@
 //     print_color(Color::Green);
 //     // print_color(Color::Blue);
 // }
+fn main() {}
