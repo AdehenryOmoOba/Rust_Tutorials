@@ -129,11 +129,16 @@
 // ===============================================
 
 // strings
-fn print_name(first_name: &str, last_name: &str) {
-    println!("Full name: {first_name} - {last_name}");
+fn print_name(first_name: &str) -> String {
+    for char in first_name.chars() {
+        println!("{char}");
+    }
+
+    return format!("Hello, {}!", first_name);
 }
 fn main() {
-    // let first_name = "Ade";
-    // let last_name = "Henry";
-    print_name("Ade", "Henry")
+    let first_name = "Ade";
+    let greet = print_name(first_name);
+
+    println!("{greet}");
 }
